@@ -11,7 +11,7 @@ export default function Overlay() {
           className="text-center"
         >
           <h1 className="font-serif text-3xl md:text-4xl font-normal text-white tracking-[0.3em] uppercase">
-            ATELIER
+            ЮГИЛЬМИ
           </h1>
           <p className="mt-2 font-sans text-xs md:text-sm font-light text-white/60 tracking-[0.2em] uppercase">
             Коллекция · 2026

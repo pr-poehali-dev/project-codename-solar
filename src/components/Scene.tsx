@@ -3,23 +3,25 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { useTexture } from "@react-three/drei"
 import * as THREE from "three"
 
+const hoodie = "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/bucket/3a558bff-11de-4e03-a852-7e818c325b1a.jpeg"
+
 const images = [
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/7c6aa834-e49d-43a9-86f9-273ae0d557e0.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/fb5eafb4-fe25-4fc3-a5ef-b16faac66cf3.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/4b23b053-7f7a-47b9-ae1c-df84abe913ae.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/5eac33ca-2911-4811-9d8c-51f0f6f69549.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/7c6aa834-e49d-43a9-86f9-273ae0d557e0.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/fb5eafb4-fe25-4fc3-a5ef-b16faac66cf3.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/4b23b053-7f7a-47b9-ae1c-df84abe913ae.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/5eac33ca-2911-4811-9d8c-51f0f6f69549.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/7c6aa834-e49d-43a9-86f9-273ae0d557e0.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/fb5eafb4-fe25-4fc3-a5ef-b16faac66cf3.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/4b23b053-7f7a-47b9-ae1c-df84abe913ae.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/5eac33ca-2911-4811-9d8c-51f0f6f69549.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/7c6aa834-e49d-43a9-86f9-273ae0d557e0.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/fb5eafb4-fe25-4fc3-a5ef-b16faac66cf3.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/4b23b053-7f7a-47b9-ae1c-df84abe913ae.jpg",
-  "https://cdn.poehali.dev/projects/73614c96-9f5e-4b43-b53c-f727ac2a72fa/files/5eac33ca-2911-4811-9d8c-51f0f6f69549.jpg",
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
+  hoodie,
 ]
 
 const imagePositions = [
